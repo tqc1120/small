@@ -1,5 +1,12 @@
-# small
+# Small
 some small projects
 
 ### TicTacToe
-python with tkinter
+Python with TKinter
+
+### Credit Card Checker
+Javascript
+
+### Mysterious Organism
+Javascript
+
