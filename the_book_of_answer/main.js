@@ -1,9 +1,42 @@
+let bookcover = document.getElementById("cover");
+let next = document.getElementById("nextq");
+let review = document.getElementById("answerbutton");
+let answer = document.getElementById("theanswercontent");
+
+
 // create the answers pool
-const the_answers_pool = ["You'be happy you did", "Shift your focus", "Get a clearer view", "It may already be a done deal", "Do not overdo it", "Do not waste your time", "You are too close to see", "Enjoy it", "The situatuion is unclear", "You are sure to have support", " If you do as you're told", "Trust yourself", "Now you can", "You don't really care"] 
+let answerpool = ["A Substantial Effort Will Be Required", "Don't Hesitate", "Investigate And Then Enjoy It", "Mishaps Are Highly Probable", "The Outcome Will Be Positive"]
+
 // ask question and get answer
-function get_answer() {
-    const index_of_answer = Math.floor(Math.random() * the_answers_pool.length)
-    return the_answers_pool[index_of_answer]
+let newanswer = function() {
+    let index = Math.floor(Math.random() * answerpool.length)
+    let rand = answerpool[index]
+    return rand
 }
 
-console.log(get_answer())
+
+let openbook = function() {
+    bookcover.style.display = "none";
+    next.style.display = "block";
+    review.style.display = "none";
+    answer.innerHTML = newanswer();
+    answer.style.display = "block";
+
+}
+
+let closebook = function() {
+    bookcover.style.display = "block";
+    next.style.display = "none";
+    review.style.display = "block";
+    answer.style.display = "none";
+}
+
+review.onclick = openbook;
+next.onclick = closebook;
+
+
+
+
+
+
+
