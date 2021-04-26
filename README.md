@@ -10,3 +10,5 @@ Javascript
 ### Mysterious Organism
 Javascript
 
+### Find Your Hat(game play on terminal)
+Javascript
