@@ -1,0 +1,68 @@
+body {
+    background-color: #6b6a6d;
+    color: white;
+    text-align: center;
+    font-family: Martel;
+    display: grid;
+    grid-template-rows: 180px 700px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Dancing Script;
+}
+
+#theanswercontent {
+    margin:0%;
+    color: black;
+    background-color: white;
+    display: none;
+    height: 600px;
+    font-family: Dancing Script;
+    font-size: 35px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 600px; 
+}
+
+header {
+    margin: 0px auto;
+    grid-area: 1 / 2 / 2 / span 1;
+}
+
+.main {
+    align-items: center;
+    grid-area: 2 / 2 / span1 / 3;
+}
+
+#cover {
+    width: auto;
+    height: 600px;
+}
+
+button{
+    color: white;
+    background-color: black;
+    width: 50%;
+    height: 40px;
+    margin: 20px 25%;
+    grid-area: 2 / 2 / span1 / 3;
+    justify-self: center;
+}
+
+#nextq {
+    display: none;
+    grid-area: 2 / 2 / span1 / 3;
+    margin-top: 620px;
+}
+
+#nextq a {
+    color: gold;
+}
+
+footer {
+    font-size: 15px;
+    margin: 5px auto;
+    grid-area: 3 / 2 / span1 / 3;
+}
